@@ -6,16 +6,14 @@ int main()
     FILE *archivo;
     int arreglo[5], temp;
 
-    // Abrir archivo en modo lectura
     archivo = fopen("datos.txt", "r");
 
-    // Leer los datos desde el archivo
     for (int i = 0; i < 5; i++)
     {
         fscanf(archivo, "%d", &arreglo[i]);
     }
 
-    fclose(archivo); // Cerrar archivo
+    fclose(archivo); 
 
     // Ordenamiento burbuja
     for (int i = 0; i < 4; i++)
@@ -31,7 +29,6 @@ int main()
         }
     }
 
-    // Mostrar resultados
     printf("Los datos ordenados son:");
     for (int i = 0; i < 5; i++)
     {
